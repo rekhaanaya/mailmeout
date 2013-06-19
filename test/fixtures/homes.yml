@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Discover: MyString
+  Connect: MyString
+  Me: MyString
+
+two:
+  Discover: MyString
+  Connect: MyString
+  Me: MyString
