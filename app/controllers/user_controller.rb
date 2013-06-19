@@ -9,6 +9,7 @@ class UserController < ApplicationController
 
 def bill
   
+  @userhomes = Userhome.sorted
 end
 def bank
   

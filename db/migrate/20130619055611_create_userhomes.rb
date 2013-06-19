@@ -4,7 +4,7 @@ class CreateUserhomes < ActiveRecord::Migration
       
       t.string :name, :limit => 20
       t.string  :kind, :limit =>20
-      t.date :date
+      
       
       t.timestamps
 

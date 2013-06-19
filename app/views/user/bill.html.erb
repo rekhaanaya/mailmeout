@@ -7,63 +7,24 @@
        <td>Kind</td>
       <td>Date</td>
     </tr>
-    
-    <tr>
-      <td></td>
-      <td></td>
+    <% @userhomes.each do |userhome|  %> 
+    <tr class="<%= cycle('odd', 'even') %> ">
+      <td><%=userhome.name %></td>
+      <td><%=userhome.kind %></td>
       <td></td>
       </tr>
+      
+  <% end %>
     
       
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    
-    
-    
-    <tr>
-      <td></td>
-      <td></td>
-      <td>-</td>
-    </tr>
+
     
     
     
     
-    <tr>
-      <td></td>
-      <td></td>
-      <td>-</td>
-    </tr>
     
     
-    <tr>
-      <td></td>
-      <td></td>
-      <td>-</td>
-    </tr>
-    
-    
-    <tr>
-      <td></td>
-      <td></td>
-      <td>-</td>
-    </tr>
-    
-    <tr>
-      <td></td>
-      <td></td>
-      <td>-</td>
-    </tr>
-    
-    <tr>
-      <td></td>
-      <td></td>
-      <td>-</td>
-    </tr>
-    
+
     
     
     

@@ -1,3 +1,6 @@
 class Userhome < ActiveRecord::Base
-  # attr_accessible :title, :body
+   attr_accessible :name, :kind
+   
+   scope :sorted, order("userhomes.name ASC")
+   
 end
