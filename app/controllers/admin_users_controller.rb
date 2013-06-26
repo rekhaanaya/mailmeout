@@ -20,6 +20,13 @@ def list
 @admin_user = AdminUser.new
   end
 
+
+def signup
+
+@admin_user = AdminUser.new
+end
+
+
 def create
 
 @admin_user = AdminUser.new(params[:admin_user])
@@ -30,6 +37,15 @@ else
 render("new")
 end
 end
+
+
+
+
+
+
+
+
+
 
 
 

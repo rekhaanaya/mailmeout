@@ -6,13 +6,20 @@
       <td>Name</td>
        <td>Kind</td>
       <td>Date</td>
+      <td>Want delivery?</td>
     </tr>
-    <% @userhomes.each do |userhome|  %> 
+    <% @billing_papers.each do |bill|  %> 
     <tr class="<%= cycle('odd', 'even') %> ">
-      <td><%=userhome.name %></td>
-      <td><%=userhome.kind %></td>
-      <td></td>
-      </tr>
+      <td><%= link_to(bill.name, "http://localhost:3000/pages/bill_paper" ) %></td>
+      <td><%=bill.kind %></td>
+      <td><%=bill.date %></td>
+      <td>
+        <input class="checkbox" type="checkbox" name="" value="true" width="30" height="30" >
+      </td>
+      <td class="actions">
+<%= link_to('Delete',{:action => 'delete', :id => bill.id}, :class => 'action delete') %>
+      </td>
+</tr>
       
   <% end %>
     

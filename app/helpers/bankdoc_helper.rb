@@ -1,0 +1,2 @@
+module BankdocHelper
+end

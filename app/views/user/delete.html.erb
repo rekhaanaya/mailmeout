@@ -1,0 +1,16 @@
+<% @page_title = "Delete Letter: #{@userhome.letter_name}" -%>
+
+<%= link_to("<< Back to Letters", {:action => 'bill'}, :class => 'back-link') %>
+
+<div class="letter delete">
+<h2> Delete Letter</h2>
+
+<%= form_for(:userhome, :url => {:action => 'destroy', :id => @userhome.id}) do |l| %>
+
+<p> Are you sure you want to delete this letter </p>
+<p class="reference-name"><%= @userhome.letter_name %> </p>
+<div class="form-buttons">
+<%= submit_tag("Delete Letter") %>
+</div>
+<% end %>
+</div>

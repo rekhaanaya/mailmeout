@@ -1,6 +1,8 @@
 Twitter::Application.routes.draw do 
 
 
+ get "public/pages"
+
   get "admin_users/list"
 
   get "admin_users/new"

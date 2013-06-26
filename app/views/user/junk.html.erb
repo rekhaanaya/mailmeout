@@ -6,64 +6,25 @@
       <td>Name</td>
        <td>Kind</td>
       <td>Date</td>
+      <td>Want delivery?</td>
     </tr>
     
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      </tr>
+    <% @junk_papers.each do |junk|  %> 
+    <tr class="<%= cycle('odd', 'even') %> ">
+      <td><%= link_to(junk.name, "http://localhost:3000/pages/bill_paper" ) %></td>
+      <td><%= junk.kind %></td>
+      <td><%=junk.date %></td>
+      <td>
+        <input class="checkbox" type="checkbox" name="" value="true" width="30" height="30" >
+      </td>
+      <td class="actions">
+<%= link_to('Delete',{:action => 'delete', :id =>junk.id}, :class => 'action delete') %>
+      </td>
+</tr>
+      
+  <% end %>
     
       
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    
-    
-    
-    <tr>
-      <td></td>
-      <td></td>
-      <td>-</td>
-    </tr>
-    
-    
-    
-    
-    <tr>
-      <td></td>
-      <td></td>
-      <td>-</td>
-    </tr>
-    
-    
-    <tr>
-      <td></td>
-      <td></td>
-      <td>-</td>
-    </tr>
-    
-    
-    <tr>
-      <td></td>
-      <td></td>
-      <td>-</td>
-    </tr>
-    
-    <tr>
-      <td></td>
-      <td></td>
-      <td>-</td>
-    </tr>
-    
-    <tr>
-      <td></td>
-      <td></td>
-      <td>-</td>
-    </tr>
-    
     
     
     

@@ -1,13 +1,22 @@
+.identity{
+  padding: 0px 5px 5px 666px;
+ color:  blue;
+  
+}
+
+.notice
+{ height: 1.25em; padding: 0.5em; text-align: center; background: #B6D491; color: #4C2516;}
+
 
 .row-section{
-    
+
     width:1100px;
-    
+
 }
 
 
 .span2 {
-    
+
     position: relative;
     right: -70%;
     top: -82px;
@@ -15,7 +24,7 @@
 }
 
 .span1 {
-    
+
     position: relative;
     left: 185px;
     width: 257px;
@@ -44,10 +53,12 @@ font-size: 16px;
 
 
 
+
 .main-item{
     
     padding: 42px 5px 5px 246px;
 }
+
 
 h3{
     
@@ -68,6 +79,9 @@ h3{
     position: relative;
     top: 8px;
 }
+
+
+
 
 .middle-item{
     	font: 13px Verdana, Arial, Helvetica, sans-serif;
@@ -118,6 +132,12 @@ td+td {
         .bill {
 	font: 13px/39px Verdana, Arial, Helvetica, sans-serif;
 	border-collapse: collapse;
-	width: 782px;
+	width: 860px;
         vertical-align: inherit;
 	}
+        
+        .checkbox {
+            
+            width: 30px;
+            height: 30px;
+        }

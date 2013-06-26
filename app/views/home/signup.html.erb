@@ -1,0 +1,15 @@
+
+<% @page_title = 'Create Account' %>
+
+
+<div class="user new">
+<h2> Create an Account</h2>
+
+<%= form_for(:admin_user, :url => {:action => 'create_user'}) do |f| %>
+
+<%= render(:partial => 'form', :locals => {:f =>f} ) %>
+<div class="form-buttons">
+<%= submit_tag('Create an Account') %>
+</div>
+<% end %>
+</div>

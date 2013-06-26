@@ -3,12 +3,13 @@ class CreateHomes < ActiveRecord::Migration
     create_table :homes do |t|
      
 
-      t.timestamps
+
+
+ t.timestamps
     end
   end
 
 def self.down
-
 
 
 end

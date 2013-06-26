@@ -1,0 +1,2 @@
+class BankdocController < ApplicationController
+end

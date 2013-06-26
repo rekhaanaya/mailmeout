@@ -6,66 +6,25 @@
       <td>Name</td>
        <td>Kind</td>
       <td>Date</td>
+      <td>Want Delivery?</td>
     </tr>
     
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      </tr>
+    <% @bankdocs.each do |bank|  %> 
+    <tr class="<%= cycle('odd', 'even') %> ">
+      <td><%= link_to(bank.name, "http://localhost:3000/pages/bill_paper" ) %></td>
+      <td><%= bank.kind %></td>
+      <td><%=bank.date %></td>
+      <td>
+        <input class="checkbox" type="checkbox" name="" value="true" width="30" height="30" >
+      </td>
+      <td class="actions">
+<%= link_to('Delete',{:action => 'delete', :id => bank.id}, :class => 'action delete') %>
+      </td>
+</tr>
+      
+  <% end %>
     
       
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    
-    
-    
-    <tr>
-      <td></td>
-      <td></td>
-      <td>-</td>
-    </tr>
-    
-    
-    
-    
-    <tr>
-      <td></td>
-      <td></td>
-      <td>-</td>
-    </tr>
-    
-    
-    <tr>
-      <td></td>
-      <td></td>
-      <td>-</td>
-    </tr>
-    
-    
-    <tr>
-      <td></td>
-      <td></td>
-      <td>-</td>
-    </tr>
-    
-    <tr>
-      <td></td>
-      <td></td>
-      <td>-</td>
-    </tr>
-    
-    <tr>
-      <td></td>
-      <td></td>
-      <td>-</td>
-    </tr>
-    
-    
-    
     
     
   </table>
