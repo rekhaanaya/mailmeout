@@ -1,8 +1,7 @@
 class Userhome < ActiveRecord::Base
    attr_accessible :name, :kind , :date
-  validates :admin_user_id, :userhome_id, presence: true
-  
-
+  validates :admin_user_id, presence: true 
+  default_scope order: 'userhomes.created_at DESC'
    scope :sorted, order("userhomes.name ASC")
    
 belongs_to :admin_user

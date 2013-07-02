@@ -1,0 +1,30 @@
+
+
+<div class="main-item">
+  <div class="identity">Logged in as:<%= session[:email] %></div>
+
+
+
+
+
+ <div class="middle-item">
+    <h2> Softpobox</h2>
+    
+  <table>
+    <tr class="yellow">
+      <td>Name</td>
+       <td>Kind</td>
+      <td>Modified</td>
+    </tr>
+    
+  
+  
+  <% if @admin_user.userhome.any? %>    
+      <h3>Microposts (<%= @admin_user.userhome.count %>)</h3>
+       <%= render @userhomes %>
+  
+   
+  <% end %>  
+    
+   
+  </table>

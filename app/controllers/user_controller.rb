@@ -1,14 +1,64 @@
 class UserController < ApplicationController
+  before_filter :confirm_logged_in
   
+
+
+def index
   
+  @admin_user = AdminUser.find(params[:admin_user_id])
+   @userhome = @admin_user.userhome
+ 
+end
+
+
+
   
   
   def userhome
-    
-    @userhomes = Userhome.sorted
-  
-  end
 
+  @admin_user = AdminUser.find(session[:user_id])
+  @userhome = @admin_user.userhome
+
+end
+  
+  
+  
+  def show
+
+  end
+  
+  
+  
+  
+  
+  def create
+  @userhomes = authorized_user.userhome.build(params[:userhome])
+  if @userhome.save
+    flash[:success] ="Account created!"
+    redirect_to('user/userhome')
+    
+  else
+    render 'home'
+  end
+  end
+  
+  
+ 
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 def bill
   
   @billing_papers = BillingPaper.sorted
@@ -40,5 +90,36 @@ def destroy
   flash[:notice] = ""
   redirect_to(:action => 'bill')
 end
+
+
+def signin
+  redirect_to('/home/signin')
+
+end
+
+
+
+def logout
+
+session[:user_id] = nil
+session[:email] = nil
+flash[:notice] = "You have been logged out."
+
+redirect_to("/home/signin")
+
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 end

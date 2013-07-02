@@ -1,7 +1,7 @@
 class CreateUserhomes < ActiveRecord::Migration
   def self.up
    create_table :userhomes do |t|
-
+    t.references :admin_user
     t.string :name, :limit => 20
     t.string :kind, :limit => 20
     t.date :date
@@ -11,7 +11,6 @@ class CreateUserhomes < ActiveRecord::Migration
  end
   end
   
- 
 
 
  

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130626085547) do
+ActiveRecord::Schema.define(:version => 20130627080447) do
 
   create_table "admin_users", :force => true do |t|
     t.string   "first_name", :limit => 20
@@ -23,11 +23,12 @@ ActiveRecord::Schema.define(:version => 20130626085547) do
   end
 
   create_table "bankdocs", :force => true do |t|
-    t.string   "name",       :limit => 20
-    t.string   "kind",       :limit => 20
+    t.string   "name",        :limit => 20
+    t.string   "kind",        :limit => 20
     t.date     "date"
-    t.datetime "created_at",               :null => false
-    t.datetime "updated_at",               :null => false
+    t.datetime "created_at",                :null => false
+    t.datetime "updated_at",                :null => false
+    t.integer  "userhome_id"
   end
 
   create_table "banks", :force => true do |t|
@@ -42,11 +43,12 @@ ActiveRecord::Schema.define(:version => 20130626085547) do
   add_index "banks", ["admin_user_id"], :name => "index_banks_on_admin_user_id"
 
   create_table "billing_papers", :force => true do |t|
-    t.string   "name",       :limit => 20
-    t.string   "kind",       :limit => 20
+    t.string   "name",        :limit => 20
+    t.string   "kind",        :limit => 20
     t.date     "date"
-    t.datetime "created_at",               :null => false
-    t.datetime "updated_at",               :null => false
+    t.datetime "created_at",                :null => false
+    t.datetime "updated_at",                :null => false
+    t.integer  "userhome_id"
   end
 
   create_table "connects", :force => true do |t|
@@ -65,11 +67,12 @@ ActiveRecord::Schema.define(:version => 20130626085547) do
   end
 
   create_table "junk_papers", :force => true do |t|
-    t.string   "name",       :limit => 20
-    t.string   "kind",       :limit => 20
+    t.string   "name",        :limit => 20
+    t.string   "kind",        :limit => 20
     t.date     "date"
-    t.datetime "created_at",               :null => false
-    t.datetime "updated_at",               :null => false
+    t.datetime "created_at",                :null => false
+    t.datetime "updated_at",                :null => false
+    t.integer  "userhome_id"
   end
 
   create_table "junks", :force => true do |t|
@@ -125,11 +128,14 @@ ActiveRecord::Schema.define(:version => 20130626085547) do
   add_index "user_papers", ["admin_user_id", "userhome_id"], :name => "index_user_papers_on_admin_user_id_and_userhome_id"
 
   create_table "userhomes", :force => true do |t|
-    t.string   "name",       :limit => 20
-    t.string   "kind",       :limit => 20
+    t.string   "name",          :limit => 20
+    t.string   "kind",          :limit => 20
     t.date     "date"
-    t.datetime "created_at",               :null => false
-    t.datetime "updated_at",               :null => false
+    t.datetime "created_at",                  :null => false
+    t.datetime "updated_at",                  :null => false
+    t.integer  "admin_user_id"
   end
+
+  add_index "userhomes", ["admin_user_id", "created_at"], :name => "index_userhomes_on_admin_user_id_and_created_at"
 
 end

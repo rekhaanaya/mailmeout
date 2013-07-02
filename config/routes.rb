@@ -1,6 +1,5 @@
 Twitter::Application.routes.draw do 
 
-
  get "public/pages"
 
   get "admin_users/list"
@@ -12,6 +11,8 @@ Twitter::Application.routes.draw do
   get "admin_users/delete"
 
   root :to => "home#Me"
+
+
 
 match 'admin', :to => 'access#menu'
   # The priority is based upon order of creation:

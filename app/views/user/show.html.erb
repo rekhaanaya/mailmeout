@@ -1,7 +1,7 @@
 
   
 <div class="main-item">
-  <div class="identity"><%= session[:email] %></div>
+  <div class="identity">Logged in as:<%= session[:email] %></div>
    <div class="logout"><%= link_to("Logout", :action => 'logout') %></div>
   
   <ul class="items">
@@ -25,24 +25,12 @@
       <td>Modified</td>
     </tr>
     
-      <tr>
+   <tr>
   <td>Getting Started</td>
-  <td>pdf</td>
-  <td>06-23-2013</td>
-  <tr>
+  <td>Photos</td>
   <td>Agreement & policies</td>
-  <td>pdf</td>
-    <td>06-23-2013</td>
-</tr>
-    
-<% if @admin_user.userhome %>
-  <td><%= @admin_user.userhome.name %></td>
-  <td><%= @admin_user.userhome.kind %></td>
-  <td><%= @admin_user.userhome.date %></td>
   
-
   </tr>
-<% end %>
 
 
  </table>

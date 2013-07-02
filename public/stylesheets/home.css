@@ -1,6 +1,20 @@
+
+
+
+
 .identity{
   padding: 0px 5px 5px 666px;
  color:  blue;
+  
+}
+
+
+.logout{
+  
+  padding: 0px 5px 5px 873px;
+  color: #4C2516;
+  position: relative;
+  top: -62px;
   
 }
 
@@ -14,19 +28,24 @@
 
 }
 
-
+body{
+  
+  background: url("/images/background.jpeg") no-repeat;
+  background-size: 1278px 1357px;
+  
+}
 .span2 {
 
     position: relative;
-    right: -70%;
-    top: -82px;
+    right: -67%;
+    top: -106px;
      width: 233px;
 }
 
 .span1 {
 
     position: relative;
-    left: 185px;
+    left: 140px;
     width: 257px;
     top: 93px;
 }
@@ -37,6 +56,32 @@ font-size: 13px;
 color: #444;
 font-weight: normal;
 }
+
+
+
+.header-row li{
+font: 14px Verdana, Arial, Helvetica, sans-serif;
+list-style-type: none;
+display: inline;
+padding: 5px 5px 5px 33px;
+position: relative;
+top: 30px;
+left: 65%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .sign-in {
@@ -56,24 +101,44 @@ font-size: 16px;
 
 .main-item{
     
-    padding: 42px 5px 5px 246px;
+    padding: 42px 5px 5px 174px;
 }
 
 
-h3{
-    
-    color: #499DF5;
+h3 {
+color: #499DF5;
+font: icon;
+font-size: 18px;
 }
+
+
+h1 {
+  
+  font: icon;
+  font-size: 25px;
+}
+
+
 
 .items li{
     
    font: 15px Verdana, Arial, Helvetica, sans-serif;
    list-style-type: none;
+   
     padding: 5px 5px 5px 5px;
     position: relative;
     top: -30px;
     
+    
 }
+
+
+a:link {
+  
+  text-decoration: none;
+}
+
+
 .items img
 {
     position: relative;
@@ -88,7 +153,7 @@ h3{
 
     position: relative;
     top: -314px;
-    left: 538px;
+    left: 471px;
 }
 
 table {
@@ -141,3 +206,17 @@ td+td {
             width: 30px;
             height: 30px;
         }
+
+.login form {margin: 100px 250px;
+}
+
+
+#content {
+padding-left: 100px;
+padding-right: 100px;
+}
+
+.signin-table td,th {
+  border: none;
+  
+}

@@ -4,7 +4,8 @@ require 'digest/sha1'
 class AdminUser < ActiveRecord::Base
    attr_accessible :first_name, :last_name, :password, :email 
 
-belongs_to :userhome 
+has_one :userhome, dependent: :destroy
+
 
 attr_accessor :hashed_password, :salt
 EMAIL_REGEX = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i

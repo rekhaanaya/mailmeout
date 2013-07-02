@@ -3,24 +3,25 @@ class HomeController < ApplicationController
 
 
 def home
+  
+  
 
 end
 
 
 def user
-  
+   
+
   redirect_to('/user/userhome')
   
   
 end
 
 
-
-
-def login
- redirect_to('/access/login')
-  end
+def signin
   
+end
+
  def signup
     
   end 
@@ -33,6 +34,7 @@ def login
   def create_user
 
 @admin_user = AdminUser.new(params[:admin_user])
+
 if @admin_user.save
 flash[:notice] = 'Account created please login.'
 redirect_to(:action => 'home')
