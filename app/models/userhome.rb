@@ -10,7 +10,7 @@ belongs_to :admin_user
 
 
  
-   def letter_name
+   def name
  "#{name}"
    end
    

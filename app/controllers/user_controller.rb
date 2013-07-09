@@ -4,28 +4,23 @@ class UserController < ApplicationController
 
 
 def index
-  
-  @admin_user = AdminUser.find(params[:admin_user_id])
+    @admin_user = AdminUser.find(params[:admin_user_id])
    @userhome = @admin_user.userhome
- 
-end
+ end
 
 
 
   
   
   def userhome
-
   @admin_user = AdminUser.find(session[:user_id])
   @userhome = @admin_user.userhome
-
 end
   
   
   
   def show
-
-  end
+end
   
   
   
@@ -45,51 +40,55 @@ end
   
  
 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-def bill
-  
-  @billing_papers = BillingPaper.sorted
+  def bill
+   @billing_papers = BillingPaper.sorted
 end
+
 def bank
 @bankdocs = Bankdoc.sorted  
 end
 
 def signature
- 
-end
+ end
 
 def junk
-  
   @junk_papers = JunkPaper.sorted
- 
-end
+ end
 
 def others
  end
  
 def delete
-@userhome = Userhome.find(params[:id])
+@billing_paper = BillingPaper.find(params[:id])
+
 end
 
 
 def destroy
-  Userhome.find(params[:id]).destroy
+ BillingPaper.find(params[:id]).destroy
   flash[:notice] = ""
   redirect_to(:action => 'bill')
+
+
+
+
+
 end
+
+
+def delete_bankdoc
+ @bankdoc = Bankdoc.find(params[:id])
+end
+
+
+def destroy_bankdoc
+  
+  Bankdoc.find(params[:id]).destroy
+  flash[:notice] = ""
+  redirect_to(:action => 'bank')
+end
+
+
 
 
 def signin

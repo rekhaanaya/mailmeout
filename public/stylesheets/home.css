@@ -18,6 +18,12 @@
   
 }
 
+.logo{
+  position: relative;
+  top: 78px;
+  left: 15.5%;
+  
+}
 .notice
 { height: 1.25em; padding: 0.5em; text-align: center; background: #B6D491; color: #4C2516;}
 
@@ -31,9 +37,13 @@
 body{
   
   background: url("/images/background.jpeg") no-repeat;
-  background-size: 1278px 1357px;
+  background-color: #000000;
+  background-size: 1278px 1447px;
   
 }
+
+
+
 .span2 {
 
     position: relative;
@@ -66,7 +76,7 @@ display: inline;
 padding: 5px 5px 5px 33px;
 position: relative;
 top: 30px;
-left: 65%;
+left: 67%;
 }
 
 
@@ -190,8 +200,8 @@ td+td {
         .bill-item{
             
             position: relative;
-            top: 30px;
-            left: 311px;
+            top: -330px;
+            left: 396px;
         }
         
         .bill {
@@ -202,12 +212,11 @@ td+td {
 	}
         
         .checkbox {
-            
-            width: 30px;
+             width: 30px;
             height: 30px;
         }
 
-.login form {margin: 100px 250px;
+ form {margin: 100px 250px;
 }
 
 
@@ -219,4 +228,18 @@ padding-right: 100px;
 .signin-table td,th {
   border: none;
   
+}
+
+
+
+.form-buttons {
+text-align: center;
+margin: 1em 0;
+}
+
+.new table td, th
+{
+  margin: 0 auto;
+  border: none;
+
 }
