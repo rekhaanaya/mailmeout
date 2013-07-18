@@ -3,24 +3,26 @@
 
 .identity{
   padding: 0px 5px 5px 666px;
- color:  blue;
+ color:  #FFFFFF;
   
 }
 
 
-.logout{
-  
-  padding: 0px 5px 5px 873px;
-  color: #4C2516;
-  position: relative;
-  top: -62px;
-  
+.logout li{
+font: 14px Verdana, Arial, Helvetica, sans-serif;
+color: #FFFFFF;
+list-style-type: none;
+display: inline;
+padding: 5px 5px 5px 14px;
+position: relative;
+top: -76px;
+left: 92%;
 }
 
 .logo-text{
   position: relative;
   top: -26px;
-  left: 13.5%;
+  left: 11.5%;
   font: 50px Verdana, Arial, Helvetica, sans-serif;
   color: #FFFFFF;
   
@@ -39,7 +41,7 @@
 
 body{
   
-  background-color:  #008B8B;
+  background-color:  gray;
   
   background-size: 1278px 1850px;
   
@@ -51,22 +53,22 @@ body{
 
     position: relative;
     right: -56%;
-    top: -20em;
-     width: 233px;
+    top: -66em;
+     width: 263px;
 }
 .span5  {
 
     position: relative;
     left: 140px;
     width: 257px;
-    top: -50em;
+    top: -94em;
 }
 
 .span6 {
 
     position: relative;
     right: -56%;
-    top: -63em;
+    top: -106em;
      width: 233px;
 }
 
@@ -93,6 +95,13 @@ body{
 }
 
 
+.span7 {
+
+    position: relative;
+    right: -70%;
+    top: -78em;
+     width: 233px;
+}
 
 
 
@@ -104,21 +113,15 @@ body{
      width: 233px;
 }
 
-.iphone-inside{
-  
-  position: relative;
-    right: -7%;
-    top: -37em;
-     width: 228px;
-     height: 189px;
-}
+
 
 .lapi-inside{
   
   position: relative;
-    right: -7%;
-    top: -291px;
+    right: -8%;
+    top: -436px;
      width: 270px;
+     height: 184px;
      image-orientation: #DB70DB;     
 }
 
@@ -126,9 +129,9 @@ body{
 .lapi {
   
   position: relative;
-    right: 14%;
-    top: -135px;
-     width:383px;
+    right: -4%;
+    top: -157px;
+     width: 293px;
      image-orientation: #DB70DB;     
 }
 
@@ -142,13 +145,23 @@ body{
      height: 289px;    
 }
 
+.iphone-inside{
+  
+  position: relative;
+    right: -7%;
+    top: -38em;
+     width:228px;
+     height: 214px; 
+  
+  
+}
 
 .span1 {
 
     position: relative;
     left: 140px;
     width: 257px;
-    top: -35em;
+    top: -80em;
 }
 
 .heading .text {
@@ -186,19 +199,25 @@ left: 67%;
 
 
 
-.sign-in {
+.sign-up {
   padding: 6px 20px 5px 25px;
   border: 1px solid #666;
   color:#000;
   text-decoration:none;
   background-color: #499DF5;
-  width: 206px;
-height: 38px;
+  width: 240px;
+height: 46px;
 border-radius: 7px;
-font-size: 16px;
+font-size: 21px;
 }
 
-
+.sign-in {
+  
+  position: relative;
+  left: 80px;
+  font-size: 18px;
+  
+}
 
 
 .main-item{
@@ -217,7 +236,7 @@ font-size: 18px;
 h1 {
   
   font: icon;
-  font-size: 25px;
+  font-size: 30px;
   color: #FFFFFF;
 }
 
@@ -314,7 +333,7 @@ td+td {
 
 
 #content {
-padding-left: 100px;
+padding-left: 53px;
 padding-right: 100px;
 }
 

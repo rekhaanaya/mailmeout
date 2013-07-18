@@ -88,7 +88,9 @@ def destroy_bankdoc
   redirect_to(:action => 'bank')
 end
 
-
+def home
+  redirect_to('/home/home')
+end
 
 
 def signin

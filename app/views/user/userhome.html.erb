@@ -2,7 +2,16 @@
   
 <div class="main-item">
   <div class="identity"><%= session[:email] %></div>
-   <div class="logout"><%= link_to("Logout", :action => 'logout') %></div>
+   <div class="logout">
+    
+    
+    
+    
+     <ul>
+    <li><%= link_to("Home", :action => 'home' )%></li>
+    <li><%= link_to("Logout", :action => 'logout') %></li>
+    
+  </ul></div>
   
   <ul class="items">
     <li><h2>Softpobox</h2></li>
