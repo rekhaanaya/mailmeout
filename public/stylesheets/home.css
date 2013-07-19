@@ -53,7 +53,7 @@ body{
 
     position: relative;
     right: -56%;
-    top: -66em;
+    top: -92em;
      width: 263px;
 }
 .span5  {
@@ -61,14 +61,14 @@ body{
     position: relative;
     left: 140px;
     width: 257px;
-    top: -94em;
+    top: -128em;
 }
 
 .span6 {
 
     position: relative;
     right: -56%;
-    top: -106em;
+    top: -141em;
      width: 233px;
 }
 
@@ -115,6 +115,14 @@ body{
 
 
 
+ .inner-pic2{
+  
+  position: relative;
+    right: -52%;
+    top: -253px;
+     width: 233px;
+}
+
 .lapi-inside{
   
   position: relative;
@@ -124,7 +132,14 @@ body{
      height: 184px;
      image-orientation: #DB70DB;     
 }
-
+.lapi-inside2{
+  
+  position: relative;
+    right: -34%;
+    top: -338px;
+     width: 178px;
+     height: 165px;
+}
 
 .lapi {
   
@@ -134,6 +149,22 @@ body{
      width: 293px;
      image-orientation: #DB70DB;     
 }
+.lapi2 {
+  
+  position: relative;
+    right: -33%;
+    top: -109px;
+     width: 182px;
+     height: 289px;
+     
+     
+        -webkit-transform: skewY(3deg);
+        -moz-transform: skewY(-10deg);
+        background-color: #ddd;
+        
+}
+     
+     
 
 
 .iphone {
@@ -161,7 +192,7 @@ body{
     position: relative;
     left: 140px;
     width: 257px;
-    top: -80em;
+    top: -108em;
 }
 
 .heading .text {
