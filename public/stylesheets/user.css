@@ -46,15 +46,6 @@ left: 92%;
 }
 
 
-body{
-  
-  background: url("/images/background1.jpg") no-repeat;
-  background-size: 1281px 493px;
-  background-position-y: 121px;  
-  
-  
-  
-}
 
 
 
@@ -69,7 +60,7 @@ body{
 
     position: relative;
     left: 46em;
-    width: 400px;
+    width: 257px;
     top: -41em;
 }
 
@@ -206,14 +197,14 @@ font-weight: normal;
 
 
 
-.footer-row li{
+.header-row li{
 font: 14px Verdana, Arial, Helvetica, sans-serif;
-color: #000000;
+color: #FFFFFF;
 list-style-type: none;
 display: inline;
 padding: 5px 5px 5px 33px;
 position: relative;
-bottom: -120em;
+top: 30px;
 left: 67%;
 }
 
@@ -246,11 +237,10 @@ position: relative;
 left: 130px;
 }
 
-.sign-in  {
+.sign-in  a{
   
   position: relative;
-  left: 34.5em;
-  top: -19em;
+  left: 9.5em;
   font-size: 21px;
   color: #FFFFFF;
   
@@ -283,7 +273,7 @@ font-size: 18px;
   
   font: icon;
   font-size: 40px;
-  color: crimson;
+  color: #FFFFFF;
 }
 
 
@@ -298,6 +288,7 @@ font-size: 18px;
     padding: 5px 5px 5px 5px;
     position: relative;
     top: -30px;
+    color: #FFFFFF;    
     
 }
 

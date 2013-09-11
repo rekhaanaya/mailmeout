@@ -4,6 +4,7 @@ require 'digest/sha1'
 class AdminUser < ActiveRecord::Base
    attr_accessible :first_name, :last_name, :password, :email 
 
+
 has_one :userhome, dependent: :destroy
 
 

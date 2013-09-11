@@ -1,5 +1,5 @@
 
-<div class="header-row">
+<div class="footer-row">
   <ul>
     <li>About</li>
     <li>Help</li>
@@ -11,21 +11,24 @@
 <div class="row-section">
   
  <div>
-  <h1 class="logo-text"><img src="/images/logo_314979_web.png" width="80" height="80"/>Softpobox</h1> 
+  <img class="p" src="/images/p-image.png"/>
+  <h1 class="logo-text">Soft &nbsp;&nbsp;&nbsp;Obox</h1> 
 </div> 
   
 
 <div class="span3">
-<h1 class="heading"> Your postalmail Now online</h1>
+<h1 class="headline"> Your Postal mails Now Online</h1>
   <p> <button class= "sign-up"> <%= link_to("Sign up", :action => 'signup') %></button> </p>
   <p class ="sign-in">or <%= link_to("Sign in", :action => 'signin', :color => "white" ) %></p>
+<%= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook) %>
+
 </div>
 
 <div class= "span4">
-  <img src = "/images/ipad.png" width="550" height="450"/>
+  <img src = "/images/ipad.png" width="350" height="250"/>
    
 
-  <div class= "inner-pic">
+ <!-- <div class= "inner-pic"> -->
         <img class = "lapi" src = "/images/laptop-inside.jpeg" width="880" height="370"/>
 
     <img class="lapi-inside" src = "/images/lapi-inside.jpeg" width="160"/>
@@ -37,9 +40,9 @@
 </div>
 
 <div class="span7">
-   <img src = "/images/iphone.png" width="550" height="450"/>
+   <img src = "/images/iphone.png" width="80" height="100"/>
    
-   <div class= "inner-pic2">
+   <!-- <div class= "inner-pic2"> -->
         <img class = "lapi2" src = "/images/laptop-inside.jpeg" />
 
     <img class="lapi-inside2" src = "/images/lapi-inside.jpeg" width="160"/>
@@ -52,20 +55,23 @@
   
   
   <div class="span2">
-    <h1 class="heading"> Anywhere You are </h1>
+    <h1 class="heading"> What is softPobox?</h1>
     <p>
-  <h3 class="text"> Put your letters in SoftPobox and get it from your computers,phones or tablets. </h3></p>
+  <h3 class="text"> SoftPobox provides best way to organize postal mails online </p>
+    <p>No need to take them from mail box, directly access them online anywhere</p>
+    <p>No more mail box required, It will directly come to us </p>
+    <p>No more junk mails papers</p> </h3>
    
 
    
   </div>  
 
 <div class="span1">
-  <img src= "/images/iphone-image.png" width="260" height="430"/>
-   <div class= "inner-pic1">
+  <img src= "/images/reading-email.png" width="550" height="350"/>
+  <!-- <div class= "inner-pic1"> 
      <img class = "iphone" src = "/images/laptop-inside.jpeg"/>
-    <img class="iphone-inside" src = "/images/envelope.jpg" />
-  </div>
+    <img class="iphone-inside" src = "/images/envelope-detail.jpg" />
+  </div> -->
 </div>
   
   
@@ -76,12 +82,16 @@
 <div class="row-section">
 
 <div class="span5">
-  <h1 class="heading"> Safe and Privacy </h1>
+  <h1 class="heading"> How It Works? </h1>
     <p>
-  <h3 class="text"> Softpobox secure your letters and maintain privacy. </h3></p></div>
+  <h3 class="text"> SoftPobox provides a pobox which can be acessed online 24X7.</p>
+<p>Will provide unique Pobox no for each user</p>
+<p>We will scan each and every letter of your mail box and put them in your account</p>
+<p>We will keep your letters safe and secure with no loss</p> </p></h3>
+</div>               
   
-  <div class="span6">
-      <img src= "/images/privacy1.png" width="300" height="260"/>
+  <!-- <div class="span6">
+      <img src= "/images/privacy1.png" width="300" height="260"/> -->
 
     
   

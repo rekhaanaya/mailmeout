@@ -1,5 +1,11 @@
 Twitter::Application.routes.draw do 
 
+
+
+
+
+  devise_for :users
+
  get "public/pages"
 
   get "admin_users/list"

@@ -5,9 +5,10 @@ gem 'bootstrap-sass', '2.1'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-#gem 'sqlite3'
-
-
+gem 'sqlite3'
+gem 'devise', '1.1.3'
+gem 'omniauth'
+gem 'omniauth-facebook'
 group :production do
   gem 'pg', '0.15.1'
   gem 'rails_12factor', '0.0.2'
